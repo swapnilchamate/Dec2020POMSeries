@@ -1,9 +1,11 @@
 package com.qa.opencart.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.listeners.TestAllureListener;
 import com.qa.opencart.utils.Constants;
 
 import io.qameta.allure.Description;
@@ -13,6 +15,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Stories;
 import io.qameta.allure.Story;
 
+@Listeners(TestAllureListener.class)
 @Story("US-101: design the login page for demo opencart app with login, title and forgot pwd link")
 @Epic("Epic-100: design login page feature")
 public class LoginPageTest extends BaseTest {
