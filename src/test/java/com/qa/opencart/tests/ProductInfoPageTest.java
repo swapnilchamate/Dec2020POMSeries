@@ -2,7 +2,6 @@ package com.qa.opencart.tests;
 
 import java.util.Map;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
